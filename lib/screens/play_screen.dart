@@ -70,7 +70,7 @@ class _PlayScreenState extends State<PlayScreen> {
                 value.updateBoard(index);
                 final player = AudioPlayer();
                 if (soundOn) {
-                  player.play(UrlSource('assets/sounds/click.wav'));
+                  player.play(AssetSource('click.mp3'),volume: 0.5);
                 }
               },
               child: Container(
